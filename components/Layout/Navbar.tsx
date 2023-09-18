@@ -65,7 +65,7 @@ export default function Navbar({
           </div>
         )}
       </button>
-      <div className=" absolute w-16 h-16 lg:w-20 lg:h-20 top-0 items-center flex">
+      <div className=" absolute  h-16  lg:h-20 top-0 items-center flex">
         <Link href={`/${event.organizationId}/${event.id}`}>
           <span className="sr-only">Logo</span>
           <Image
@@ -78,7 +78,7 @@ export default function Navbar({
         </Link>
       </div>
       <header
-        className={`shadow-sm z-40 bg-base border-r border-primary fixed top-16 lg:top-20 left-0 w-20 h-screen ${
+        className={`shadow-sm z-40 bg-base border-r border-primary fixed top-16 lg:top-[76px] left-0 w-20 h-screen ${
           isNavVisible ? 'block' : 'hidden'
         } lg:block`}>
         <div className="flex flex-col items-center justify-between ">

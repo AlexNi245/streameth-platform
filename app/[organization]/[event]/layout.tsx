@@ -60,11 +60,11 @@ const Layout = async ({
       name: 'Schedule',
       icon: <CalendarIcon />,
     },
-    {
-      href: `/${params.organization}/${params.event}/speakers`,
-      name: 'Speakers',
-      icon: <UserGroupIcon />,
-    },
+    // {
+    //   href: `/${params.organization}/${params.event}/speakers`,
+    //   name: 'Speakers',
+    //   icon: <UserGroupIcon />,
+    // },
   ]
 
   return (

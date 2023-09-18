@@ -15,7 +15,8 @@
       }
     }
   ],
-  "eventCover": "GPC-primary-color-LM.svg",
+  "logo": "GPC-primary-color-LM.jpg",
+  "eventCover": "GPC-primary-color-LM.jpg",
   "website": "",
   "archiveMode": false,
   "timezone": "Europe/Berlin"

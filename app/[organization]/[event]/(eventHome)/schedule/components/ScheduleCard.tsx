@@ -53,7 +53,7 @@ const ScheduleCard = ({
           {session.name}
         </p>
         {speakers && (
-          <div className="flex mt-auto py-1 items-center flex-row">
+          <div className="flex mt-auto py-1 items-center flex-row space-x-2">
             {session.speakers.map((speaker) => (
               <SpeakerPhoto
                 size="sm"

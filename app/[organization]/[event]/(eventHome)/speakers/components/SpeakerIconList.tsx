@@ -10,7 +10,9 @@ export default function SpeakerIconList({
   return (
     <div className={`flex flex-col gap-2`}>
       {speakers.map((speaker) => (
-        <div key={speaker.id} className="flex flex-row gap-2">
+        <div
+          key={speaker.id}
+          className="flex flex-row gap-2 space-x-2">
           <SpeakerIcon size="md" key={speaker.id} speaker={speaker} />
         </div>
       ))}
