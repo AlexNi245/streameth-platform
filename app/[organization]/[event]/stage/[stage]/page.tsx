@@ -57,10 +57,12 @@ export default async function Stage({ params }: Params) {
     //   stage: params.stage,
     //   timestamp: new Date().getTime(),
     // })
-    const sessions = (await sessionController.getAllSessions({
-      eventId: params.event,
-      stage: params.stage,
-    })).map((session) => session.toJson())
+    const sessions = (
+      await sessionController.getAllSessions({
+        eventId: params.event,
+        stage: params.stage,
+      })
+    ).map((session) => session.toJson())
 
     if (!sessions.length)
       return (
