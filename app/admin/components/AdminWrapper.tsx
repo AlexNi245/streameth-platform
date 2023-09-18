@@ -5,7 +5,7 @@ export function AdminWrapper(props: PropsWithChildren) {
   const { data, isSignedIn } = useSIWE()
 
   return (
-    <div className="flex flex-col p-4 w-full">
+    <div className="flex flex-col p-4 w-full h-[calc(100% - 20rem)]">
       <div className="flex justify-end">
         <ConnectKitButton />
       </div>

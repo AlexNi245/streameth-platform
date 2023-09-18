@@ -16,7 +16,7 @@ export const getSlotRange = (
   return { start, end }
 }
 
-export const CELL_HEIGHT = 6
+export const CELL_HEIGHT = 16
 
 export const sessionsSchedulePosition = (sessions: ISession[]) => {
   if (sessions.length === 0) {

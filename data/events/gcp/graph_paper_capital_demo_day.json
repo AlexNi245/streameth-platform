@@ -1,0 +1,22 @@
+{
+  "id": "graph_paper_capital_demo_day",
+  "name": "Graph Paper Capital Demo day",
+  "description": "GPC S23 Demo Day is an exclusive invite-only event open to only known investors in our network and we'd love to see you there.",
+  "start": "2023-09-19T00:00:00.000Z",
+  "end": "2023-09-19T00:00:00.000Z",
+  "location": "Virtual",
+  "organizationId": "gcp",
+  "dataImporter": [
+    {
+      "type": "gsheet",
+      "config": {
+        "sheetId": "1qrkRLQZA05MAVYc-bkToDbg8vWqtnPM7mo1NR_lvKq8",
+        "apiKey": "s"
+      }
+    }
+  ],
+  "eventCover": "GPC-primary-color-LM.svg",
+  "website": "",
+  "archiveMode": false,
+  "timezone": "Europe/Berlin"
+}
