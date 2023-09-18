@@ -69,7 +69,7 @@ const Layout = async ({
 
   return (
     <div className="flex flex-col md:flex-row lg:overflow-hidden h-full">
-      {!event.archiveMode && (
+      {/* {!event.archiveMode && (
         <Navbar
           event={event.toJson()}
           pages={pages}
@@ -81,11 +81,8 @@ const Layout = async ({
             }
           })}
         />
-      )}
-      <main
-        className={`flex w-full ${
-          event.archiveMode ? ' lg:w-full' : 'lg:w-[calc(100%-5rem)]'
-        } ml-auto bg-background`}>
+      )} */}
+      <main className={`flex w-full lg:w-full ml-auto bg-background`}>
         {children}
       </main>
     </div>
