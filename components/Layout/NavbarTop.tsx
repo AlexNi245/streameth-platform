@@ -1,17 +1,15 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import img from '@/public/logo.png'
+import img from '@/public/events/GPC-primary-color-LM.png'
 import { SocialIcon } from 'react-social-icons'
 
 export default function Navbar() {
   return (
     <header className=" flex flex-row bg-base border-b border-primary w-full ml-auto  p-4 py-2 top-0 h-16 lg:h-20">
-      <div className=" flex items-center w-20">
-        <Link href="/" className="">
-          <span className="sr-only">Logo</span>
-          <Image src={img} alt="Logo" width={50} />
-        </Link>
+      <div className=" flex items-center w-28">
+        <span className="sr-only">Logo</span>
+        <Image src={img} alt="Logo" width={250} />
       </div>
       <div className="flex flex-row items-center justify-end w-full">
         <Link href="https://app.deform.cc/form/53f6c909-c5ae-4059-8590-269e09cf5592/">
