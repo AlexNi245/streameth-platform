@@ -1,7 +1,7 @@
 {
   "name": "streameth-cli",
   "version": "1.0.0",
-  "main": "index.tsx",
+  "main": "index.ts",
   "license": "MIT",
   "module": "CommonJS",
   "scripts": {
