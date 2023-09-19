@@ -1,5 +1,5 @@
-import OrganizationController from '../controller/organization'
-import EventController from '../controller/event'
+import {OrganizationController} from '../controller/organization'
+import {EventController} from '../controller/event'
 
 const run = async () => {
   const Organization = {

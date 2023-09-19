@@ -1,6 +1,6 @@
 'use client'
 import { useContext, useEffect, useState } from 'react'
-import { MobileContext } from '@/frontend/components/context/MobileContext'
+import { MobileContext } from '@/components/context/MobileContext'
 import { ScheduleContext } from './ScheduleContext'
 import { IStage } from '@/server/model/stage'
 

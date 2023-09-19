@@ -1,8 +1,10 @@
-import StageController from '@/server/controller/stage'
 import { notFound } from 'next/navigation'
-import { getSessions } from '@/frontend/utils/api'
-import { getEventDays, isSameDay } from '@/frontend/utils/time'
-import EventController from '@/server/controller/event'
+import { getSessions } from '@/utils/api'
+import { getEventDays, isSameDay } from '@/utils/time'
+import {
+  EventController,
+  StageController,
+} from 'streameth-cli'
 import StageLayout from './components/StageLayout'
 import { StageContextProvider } from './components/StageContext'
 import type { Metadata, ResolvingMetadata } from 'next'

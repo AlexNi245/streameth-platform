@@ -1,5 +1,5 @@
 import { usePathname } from 'next/navigation'
-import { Page } from '@/frontend/components/Layout/Navbar'
+import { Page } from '@/components/Layout/Navbar'
 
 const StageModal = ({
   stages,

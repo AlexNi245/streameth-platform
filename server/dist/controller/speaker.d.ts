@@ -1,5 +1,5 @@
 import Speaker, { ISpeaker } from "../model/speaker";
-export default class SpeakerController {
+export declare class SpeakerController {
     private controller;
     constructor();
     getSpeaker(speakerId: ISpeaker["id"], eventId: ISpeaker["eventId"]): Promise<Speaker>;

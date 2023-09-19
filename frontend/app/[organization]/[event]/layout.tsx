@@ -1,15 +1,16 @@
-import Navbar from '@/frontend/components/Layout/Navbar'
-import EventController from '@/server/controller/event'
-import StageController from '@/server/controller/stage'
+import Navbar from '@/components/Layout/Navbar'
+import {
+  EventController,
+  StageController,
+  SessionController,
+} from 'streameth-cli'
 import {
   HomeIcon,
-  ArchiveBoxArrowDownIcon,
   ViewColumnsIcon,
   CalendarIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline'
 import { notFound } from 'next/navigation'
-import SessionController from '@/server/controller/session'
 
 export async function generateStaticParams() {
   const eventController = new EventController()

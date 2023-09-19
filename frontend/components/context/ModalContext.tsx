@@ -1,6 +1,6 @@
 'use client'
 import { useState, createContext, useEffect } from 'react'
-import Modal from '@/frontend/components/Layout/Modal'
+import Modal from '@/components/Layout/Modal'
 
 const ModalContext = createContext<{
   modal: React.ReactNode | null

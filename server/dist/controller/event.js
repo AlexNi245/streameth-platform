@@ -35,9 +35,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventController = void 0;
 const baseController_1 = __importDefault(require("./baseController"));
 const event_1 = __importDefault(require("../model/event"));
-const organization_1 = __importDefault(require("./organization"));
+const organization_1 = require("./organization");
 class EventController {
     constructor() {
         this.controller = new baseController_1.default('fs');
@@ -73,7 +74,7 @@ class EventController {
     }
     getAllEvents() {
         return __awaiter(this, void 0, void 0, function* () {
-            const orgController = new organization_1.default();
+            const orgController = new organization_1.OrganizationController();
             const organizations = yield orgController.getAllOrganizations();
             const events = [];
             for (const organization of organizations) {
@@ -85,12 +86,11 @@ class EventController {
     }
     importEventData(event) {
         return __awaiter(this, void 0, void 0, function* () {
-            var _a;
             const { dataImporter } = event;
             if (!dataImporter)
                 return;
             for (const importer of dataImporter) {
-                const importedModule = yield (_a = `../importers/${importer.type}/index`, Promise.resolve().then(() => __importStar(require(_a))));
+                const importedModule = yield Promise.resolve(`${`../importers/${importer.type}/index`}`).then(s => __importStar(require(s)));
                 const Importer = importedModule.default;
                 // Not typesafe
                 const data = new Importer({ importer, event });
@@ -99,4 +99,4 @@ class EventController {
         });
     }
 }
-exports.default = EventController;
+exports.EventController = EventController;

@@ -1,11 +1,13 @@
 import FilterBar from './components/FilterBar'
 import FilteredItems from './components/FilteredItems'
 import { FilterContextProvider } from './components/FilterContext'
-import SpeakerController from '@/server/controller/speaker'
-import SessionController from '@/server/controller/session'
-import StageController from '@/server/controller/stage'
 import type { Metadata, ResolvingMetadata } from 'next'
-import EventController from '@/server/controller/event'
+import {
+  EventController,
+  StageController,
+  SessionController,
+  SpeakerController
+} from 'streameth-cli'
 interface Params {
   params: {
     event: string

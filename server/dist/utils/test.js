@@ -8,12 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const organization_1 = __importDefault(require("../controller/organization"));
-const event_1 = __importDefault(require("../controller/event"));
+const organization_1 = require("../controller/organization");
+const event_1 = require("../controller/event");
 const run = () => __awaiter(void 0, void 0, void 0, function* () {
     const Organization = {
         name: 'Funding the Commons',
@@ -22,7 +19,7 @@ const run = () => __awaiter(void 0, void 0, void 0, function* () {
         logo: 'https://fundingthecommons.io/assets/logoNav.6b3e7427.png',
         location: 'Unknown',
     };
-    const orgController = new organization_1.default();
+    const orgController = new organization_1.OrganizationController();
     const organizationInstance = yield orgController.createOrganization(Organization);
     const Event = {
         name: 'Funding the Commons Berlin 2023',
@@ -42,7 +39,7 @@ const run = () => __awaiter(void 0, void 0, void 0, function* () {
         ],
         timezone: "Europe/Berlin"
     };
-    const eventController = new event_1.default();
+    const eventController = new event_1.EventController();
     const EventInstance = yield eventController.createEvent(Event);
     yield eventController.importEventData(EventInstance);
 });

@@ -1,6 +1,6 @@
 import { writeFile } from 'fs/promises'
 import { NextRequest, NextResponse } from 'next/server'
-import EventController from '@/server/controller/event'
+
 export async function POST(
   request: NextRequest,
   { params }: { params: { id: string } }

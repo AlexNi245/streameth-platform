@@ -1,4 +1,4 @@
-import SpeakerController from '@/server/controller/speaker'
+import { SpeakerController } from 'streameth-cli'
 import SpeakerCard from './components/SpeakerCard'
 
 interface Params {

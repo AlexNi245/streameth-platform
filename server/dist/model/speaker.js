@@ -64,6 +64,7 @@ class Speaker {
         });
     }
 }
+exports.default = Speaker;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
@@ -94,4 +95,3 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], Speaker.prototype, "photo", void 0);
-exports.default = Speaker;

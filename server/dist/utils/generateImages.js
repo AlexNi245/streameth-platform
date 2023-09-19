@@ -13,13 +13,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const video_1 = require("./video");
-const session_1 = __importDefault(require("../controller/session"));
+const session_1 = require("../controller/session");
 const session_2 = __importDefault(require("../model/session"));
 const fs_1 = __importDefault(require("fs"));
 const eventId = 'zuzalu_montenegro_2023__other';
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        const sessionController = new session_1.default();
+        const sessionController = new session_1.SessionController();
         const sessions = yield sessionController.getAllSessions({
             eventId,
         });

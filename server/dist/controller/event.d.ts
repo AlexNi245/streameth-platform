@@ -1,5 +1,5 @@
 import Event, { IEvent } from '../model/event';
-export default class EventController {
+export declare class EventController {
     private controller;
     constructor();
     getEvent(eventId: IEvent['id'], organizationId: IEvent['organizationId']): Promise<Event>;

@@ -1,5 +1,5 @@
 import Organization, { IOrganization } from "../model/organization";
-export default class OrganizationController {
+export declare class OrganizationController {
     private controller;
     constructor();
     getOrganization(organizationId: IOrganization["id"]): Promise<Organization>;

@@ -2,7 +2,7 @@ import { ISession } from '@/server/model/session'
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
-import Card from '@/frontend/components/misc/Card'
+import Card from '@/components/misc/Card'
 
 const ArchivedSession = ({
   session,

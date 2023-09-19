@@ -1,7 +1,6 @@
+import { SpeakerController, SessionController } from 'streameth-cli'
 import SpeakerPhoto from '../components/SpeakerPhoto'
-import SpeakerController from '@/server/controller/speaker'
-import SessionController from '@/server/controller/session'
-import ScheduleCard from '@/frontend/app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'
+import ScheduleCard from '@/app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'
 
 interface Params {
   params: {

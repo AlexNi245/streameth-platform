@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext } from 'react'
 import CreateEventForm from './CreateEventForm' // Assuming you have this component
-import { ModalContext } from '@/frontend/components/context/ModalContext'
+import { ModalContext } from '@/components/context/ModalContext'
 import { IEvent } from '@/server/model/event'
 const EditOrganizationButton = ({ event }: { event: IEvent }) => {
   const { openModal } = useContext(ModalContext)

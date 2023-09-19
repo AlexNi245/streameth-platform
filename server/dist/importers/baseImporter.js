@@ -8,20 +8,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const speaker_1 = __importDefault(require("../controller/speaker"));
-const event_1 = __importDefault(require("../controller/event"));
-const session_1 = __importDefault(require("../controller/session"));
-const stage_1 = __importDefault(require("../controller/stage"));
+const speaker_1 = require("../controller/speaker");
+const event_1 = require("../controller/event");
+const session_1 = require("../controller/session");
+const stage_1 = require("../controller/stage");
 class BaseImporter {
     constructor(event) {
-        this.speakerController = new speaker_1.default();
-        this.eventController = new event_1.default();
-        this.sessionController = new session_1.default();
-        this.stageController = new stage_1.default();
+        this.speakerController = new speaker_1.SpeakerController();
+        this.eventController = new event_1.EventController();
+        this.sessionController = new session_1.SessionController();
+        this.stageController = new stage_1.StageController();
         this.event = event;
     }
     generateSessions() {

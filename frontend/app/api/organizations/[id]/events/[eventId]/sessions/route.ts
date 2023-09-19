@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import SessionController from '@/server/controller/session'
-import { extractSearchParams } from '@/frontend/utils/api'
+import {SessionController} from 'streameth-cli'
+import { extractSearchParams } from '@/utils/api'
 
 export interface SessionsSearchParams {
   timestamp?: string

@@ -1,10 +1,10 @@
 import Session from '@/server/model/session'
-import Player from '@/frontend/components/misc/Player'
-import SessionInfoBox from '@/frontend/components/sessions/SessionInfoBox'
-import ComponetCard from '@/frontend/components/misc/ComponentCard'
-import SpeakerIconList from '@/frontend/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerIconList'
+import Player from '@/components/misc/Player'
+import SessionInfoBox from '@/components/sessions/SessionInfoBox'
+import ComponetCard from '@/components/misc/ComponentCard'
+import SpeakerIconList from '@/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerIconList'
 import ActionsComponent from './ActionsComponent'
-import EmbedButton from '@/frontend/components/misc/EmbedButton'
+import EmbedButton from '@/components/misc/EmbedButton'
 
 const SpeakerComponent = ({ session }: { session: Session }) => {
   return (

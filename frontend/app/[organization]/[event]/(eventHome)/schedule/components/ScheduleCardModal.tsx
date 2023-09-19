@@ -1,9 +1,9 @@
 'use client'
 import { ISession } from '@/server/model/session'
-import SpeakerIconList from '@/frontend/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerIconList'
+import SpeakerIconList from '@/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerIconList'
 import { useEffect, useState, useContext } from 'react'
-import { ModalContext } from '@/frontend/components/context/ModalContext'
-import { LoadingContext } from '@/frontend/components/context/LoadingContext'
+import { ModalContext } from '@/components/context/ModalContext'
+import { LoadingContext } from '@/components/context/LoadingContext'
 import { useRouter } from 'next/navigation'
 
 const ScheduleCardModal = ({ session }: { session: ISession }) => {

@@ -1,8 +1,10 @@
-import EventController from '@/server/controller/event'
-import StageController from '@/server/controller/stage'
+import {
+  EventController,
+  StageController,
+} from 'streameth-cli'
 import { notFound } from 'next/navigation'
 import { hasData } from '@/server/utils'
-import { getEventDays } from '@/frontend/utils/time'
+import { getEventDays } from '@/utils/time'
 import HomePageLogoAndBanner from './components/HompageLogoAndBanner'
 import Link from 'next/link'
 import StageModalButton from './components/StageModalButton'

@@ -5,16 +5,16 @@ import {
   CalendarIcon,
   InformationCircleIcon,
 } from '@heroicons/react/24/outline'
-import SessionList from '@/frontend/components/sessions/SessionList'
+import SessionList from '@/components/sessions/SessionList'
 import Chat from '@/plugins/Chat'
-import Player from '@/frontend/components/misc/Player'
-import PluginBar from '@/frontend/components/Layout/PluginBar'
-import ActionsComponent from '@/frontend/app/[organization]/[event]/session/[session]/components/ActionsComponent'
-import SessionInfoBox from '@/frontend/components/sessions/SessionInfoBox'
+import Player from '@/components/misc/Player'
+import PluginBar from '@/components/Layout/PluginBar'
+import ActionsComponent from '@/app/[organization]/[event]/session/[session]/components/ActionsComponent'
+import SessionInfoBox from '@/components/sessions/SessionInfoBox'
 import { StageContext } from './StageContext'
-import EmbedButton from '@/frontend/components/misc/EmbedButton'
-import ShareButton from '@/frontend/components/misc/ShareButton'
-import { LoadingContext } from '@/frontend/components/context/LoadingContext'
+import EmbedButton from '@/components/misc/EmbedButton'
+import ShareButton from '@/components/misc/ShareButton'
+import { LoadingContext } from '@/components/context/LoadingContext'
 
 export default function StageLayout() {
   const stickyRef = useRef<HTMLDivElement>(null)

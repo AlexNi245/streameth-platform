@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import OrganizationController from '@/server/controller/organization'
+import { OrganizationController } from 'streameth-cli'
 
 export async function GET() {
   const organizationController = new OrganizationController()

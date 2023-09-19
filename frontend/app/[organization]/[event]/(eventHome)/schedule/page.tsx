@@ -1,5 +1,7 @@
-import EventController from '@/server/controller/event'
-import StageController from '@/server/controller/stage'
+import {
+  EventController,
+  StageController,
+} from 'streameth-cli'
 import SessionsOnSchedule from './components/SessionsOnGrid'
 import ScheduleGrid from './components/ScheduleGrid'
 import { notFound } from 'next/navigation'
@@ -7,7 +9,7 @@ import { hasData } from '@/server/utils'
 import { ScheduleContextProvider } from './components/ScheduleContext'
 import StageSelect from './components/StageSelect'
 import DateSelect from './components/DateSelect'
-import { getEventDays } from '@/frontend/utils/time'
+import { getEventDays } from '@/utils/time'
 import type { Metadata, ResolvingMetadata } from 'next'
 
 interface Params {

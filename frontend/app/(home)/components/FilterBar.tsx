@@ -1,8 +1,8 @@
 'use client'
 import { useContext, useEffect, useState } from 'react'
 import { IEvent } from '@/server/model/event'
-import SearchFilter from '@/frontend/app/[organization]/[event]/archive/components/SearchFilter'
-import { FilterContext } from '@/frontend/app/[organization]/[event]/archive/components/FilterContext'
+import SearchFilter from '@/app/[organization]/[event]/archive/components/SearchFilter'
+import { FilterContext } from '@/app/[organization]/[event]/archive/components/FilterContext'
 
 const FilterBar = ({ events }: { events: IEvent[] }) => {
   const { setFilterOptions } = useContext(FilterContext)

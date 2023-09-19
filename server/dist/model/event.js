@@ -69,6 +69,7 @@ class Event {
         });
     }
 }
+exports.default = Event;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
@@ -89,4 +90,3 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], Event.prototype, "organizationId", void 0);
-exports.default = Event;

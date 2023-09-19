@@ -1,7 +1,7 @@
 import BaseController from './baseController'
 import Stage, { IStage } from '../model/stage'
-import EventController from './event'
-export default class StageController {
+import {EventController} from './event'
+export class StageController {
   private controller: BaseController<IStage>
 
   constructor() {

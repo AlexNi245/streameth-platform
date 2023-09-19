@@ -1,7 +1,7 @@
 'use client'
 import { ISession } from '@/server/model/session'
-import SpeakerPhoto from '@/frontend/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerPhoto'
-import { ModalContext } from '@/frontend/components/context/ModalContext'
+import SpeakerPhoto from '@/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerPhoto'
+import { ModalContext } from '@/components/context/ModalContext'
 import { useContext } from 'react'
 import ScheduleCardModal from './ScheduleCardModal'
 

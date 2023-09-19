@@ -1,7 +1,7 @@
 'use client'
 import { useContext } from 'react'
 import { ScheduleContext } from './ScheduleContext'
-import { MobileContext } from '@/frontend/components/context/MobileContext'
+import { MobileContext } from '@/components/context/MobileContext'
 
 const DateSelect = ({ dates }: { dates: number[] }) => {
   const { setDate, date } = useContext(ScheduleContext)

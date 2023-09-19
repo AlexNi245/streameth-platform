@@ -1,10 +1,10 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import GeneralContext from '@/frontend/components/context/GeneralContext'
-import { ModalContextProvider } from '@/frontend/components/context/ModalContext'
-import { MobileContextProvider } from '@/frontend/components/context/MobileContext'
-import Navbar from '@/frontend/components/Layout/NavbarTop'
-import { LoadingContextProvider } from '@/frontend/components/context/LoadingContext'
+import GeneralContext from '@/components/context/GeneralContext'
+import { ModalContextProvider } from '@/components/context/ModalContext'
+import { MobileContextProvider } from '@/components/context/MobileContext'
+import Navbar from '@/components/Layout/NavbarTop'
+import { LoadingContextProvider } from '@/components/context/LoadingContext'
 import { Metadata } from 'next'
 
 const quicksand = Inter({

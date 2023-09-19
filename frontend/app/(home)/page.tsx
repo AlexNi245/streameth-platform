@@ -1,7 +1,7 @@
-import EventController from '@/server/controller/event'
-import EventList from '@/frontend/app/(home)/components/EventList'
+import { EventController } from 'streameth-cli'
+import EventList from '@/app/(home)/components/EventList'
+import { FilterContextProvider } from '@/app/[organization]/[event]/archive/components/FilterContext'
 import FilterBar from './components/FilterBar'
-import { FilterContextProvider } from '@/frontend/app/[organization]/[event]/archive/components/FilterContext'
 
 export default async function Home() {
   const eventController = new EventController()

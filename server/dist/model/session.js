@@ -102,6 +102,7 @@ class Session {
         });
     }
 }
+exports.default = Session;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
@@ -126,4 +127,3 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Object)
 ], Session.prototype, "eventId", void 0);
-exports.default = Session;

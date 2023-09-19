@@ -1,5 +1,5 @@
 import { extractFirstFrame } from './video'
-import SessionController from '../controller/session'
+import {SessionController} from '../controller/session'
 import Session from '../model/session'
 import fs from 'fs'
 

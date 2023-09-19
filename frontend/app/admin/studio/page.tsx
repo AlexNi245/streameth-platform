@@ -1,4 +1,8 @@
-import EventController from '@/server/controller/event'
+import {
+  EventController,
+  StageController,
+  SessionController,
+} from 'streameth-cli'
 import StudioLayout from './components/StudioLayout'
 import StageController from '@/server/controller/stage'
 import { IEvent } from '@/server/model/event'

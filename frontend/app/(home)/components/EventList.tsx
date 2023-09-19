@@ -1,6 +1,6 @@
 'use client'
 import { useContext } from 'react'
-import { FilterContext } from '@/frontend/app/[organization]/[event]/archive/components/FilterContext'
+import { FilterContext } from '@/app/[organization]/[event]/archive/components/FilterContext'
 import EventCard from './EventCard'
 import { IEvent } from '@/server/model/event'
 

@@ -1,5 +1,5 @@
 import { ISession } from '@/server/model/session'
-import { secondsSinceMidnight } from '@/frontend/utils/time'
+import { secondsSinceMidnight } from '@/utils/time'
 
 export const getSlotRange = (
   session: ISession,

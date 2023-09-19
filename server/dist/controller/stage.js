@@ -12,9 +12,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StageController = void 0;
 const baseController_1 = __importDefault(require("./baseController"));
 const stage_1 = __importDefault(require("../model/stage"));
-const event_1 = __importDefault(require("./event"));
+const event_1 = require("./event");
 class StageController {
     constructor() {
         this.controller = new baseController_1.default('fs');
@@ -36,7 +37,7 @@ class StageController {
     }
     getAllStages() {
         return __awaiter(this, void 0, void 0, function* () {
-            const eventController = new event_1.default();
+            const eventController = new event_1.EventController();
             const events = yield eventController.getAllEvents();
             const stages = [];
             for (const event of events) {
@@ -64,4 +65,4 @@ class StageController {
         });
     }
 }
-exports.default = StageController;
+exports.StageController = StageController;

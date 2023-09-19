@@ -1,4 +1,4 @@
-import SessionController from '@/server/controller/session'
+import { SessionController } from 'streameth-cli';
 import SessionComponent from './components/SessionComponent'
 import type { Metadata, ResolvingMetadata } from 'next'
 

@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OrganizationController = void 0;
 const baseController_1 = __importDefault(require("./baseController"));
 const organization_1 = __importDefault(require("../model/organization"));
 class OrganizationController {
@@ -45,4 +46,4 @@ class OrganizationController {
         });
     }
 }
-exports.default = OrganizationController;
+exports.OrganizationController = OrganizationController;

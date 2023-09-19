@@ -1,8 +1,7 @@
 import { AddOrUpdateFile, GetFile } from '@/server/utils/github'
-import Session from '@/frontend/utils/session'
+import Session from '@/utils/session'
 import { NextRequest, NextResponse } from 'next/server'
 import { decode } from 'js-base64'
-import SessionController from '@/server/controller/session'
 
 export const POST = async (req: NextRequest) => {
   const sessionController = new SessionController()

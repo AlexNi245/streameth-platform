@@ -5,9 +5,9 @@ import {
   getSlotRange,
   sessionsSchedulePosition,
 } from '../../utils'
-import ScheduleCard from '@/frontend/app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'
+import ScheduleCard from '@/app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'
 import { ScheduleContext } from './ScheduleContext'
-import { getSessions } from '@/frontend/utils/api'
+import { getSessions } from '@/utils/api'
 import { ISession } from '@/server/model/session'
 import { IStage } from '@/server/model/stage'
 

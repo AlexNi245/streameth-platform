@@ -1,5 +1,5 @@
 import Session, { ISession } from '../model/session';
-export default class SessionController {
+export declare class SessionController {
     private controller;
     constructor();
     getSession(sessionId: ISession['id'], eventId: ISession['eventId']): Promise<Session>;
