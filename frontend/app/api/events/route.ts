@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import EventController from '@/server/controller/event'
+import EventController from "streameth-cli/controller/event"
 
 export async function GET() {
   const controller = new EventController()

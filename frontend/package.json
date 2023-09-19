@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "test": "ts-node test.ts",
     "dev": "next dev -H 0.0.0.0 -p 3000",
     "build": "  next build",
     "start": "next start -H 0.0.0.0 -p 3000",
@@ -53,7 +54,8 @@
     "usehooks-ts": "^2.9.1",
     "video.js": "^8.5.2",
     "viem": "^1.0.7",
-    "wagmi": "^1.2.0"
+    "wagmi": "^1.2.0",
+    "streameth-cli": "1.0.0"
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.7",
