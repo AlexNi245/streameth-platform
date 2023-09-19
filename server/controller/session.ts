@@ -1,7 +1,7 @@
 import BaseController from './baseController'
 import Session, { ISession } from '../model/session'
 
-export default class SessionController {
+export class SessionController {
   private controller: BaseController<ISession>
 
   constructor() {

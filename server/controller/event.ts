@@ -1,7 +1,7 @@
 import BaseController from './baseController'
 import Event, { IEvent } from '../model/event'
-import OrganizationController from './organization'
-export default class EventController {
+import {OrganizationController} from './organization'
+export class EventController {
   private controller: BaseController<IEvent>
 
   constructor() {

@@ -1,7 +1,7 @@
 import BaseController from "./baseController";
 import Organization, { IOrganization } from "../model/organization";
 
-export default class OrganizationController {
+export class OrganizationController {
   private controller: BaseController<IOrganization>;
 
   constructor() {

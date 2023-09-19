@@ -1,7 +1,7 @@
 import BaseController from "./baseController";
 import Speaker, { ISpeaker } from "../model/speaker";
 
-export default class SpeakerController {
+export class SpeakerController {
   private controller: BaseController<ISpeaker>;
 
   constructor() {

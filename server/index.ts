@@ -1,4 +1,5 @@
-const EventController = require('./controller/event')
+export * from './controller/event'
+export * from './controller/organization'
+export * from './controller/session'
+export * from './controller/speaker'
 
-
-module.exports = {EventController}
