@@ -1,5 +1,6 @@
 'use client'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import SpeakerPhoto from '@/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerPhoto'
 import { ModalContext } from '@/components/context/ModalContext'
 import { useContext } from 'react'

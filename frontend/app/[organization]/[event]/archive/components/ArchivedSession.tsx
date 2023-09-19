@@ -1,4 +1,5 @@
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'

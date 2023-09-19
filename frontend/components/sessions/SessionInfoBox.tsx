@@ -1,5 +1,6 @@
 'use client'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import ComponetCard from '../misc/ComponentCard'
 
 const SessionInfoBox = ({

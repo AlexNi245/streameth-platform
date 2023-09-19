@@ -8,7 +8,8 @@ import {
 import ScheduleCard from '@/app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'
 import { ScheduleContext } from './ScheduleContext'
 import { getSessions } from '@/utils/api'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import { IStage } from '@/server/model/stage'
 
 const StageSessions = ({ stage }: { stage: IStage }) => {

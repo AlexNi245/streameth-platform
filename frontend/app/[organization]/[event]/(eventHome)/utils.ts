@@ -1,4 +1,5 @@
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import { secondsSinceMidnight } from '@/utils/time'
 
 export const getSlotRange = (

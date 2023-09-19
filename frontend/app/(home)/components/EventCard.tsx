@@ -1,12 +1,12 @@
 'use client'
 import { useState, useContext } from 'react'
-import { IEvent } from '@/server/model/event'
+import { IEvent } from 'streameth-cli'
 import Image from 'next/image'
 import Cover from '@/public/cover.png'
 import Card from '@/components/misc/Card'
 import { ModalContext } from '@/components/context/ModalContext'
 import { useRouter } from 'next/navigation'
-import { hasData } from '@/server/utils'
+import { hasData } from '@/utils/components'
 
 const EventCard = ({ event }: { event: IEvent }) => {
   const imageUrl = event.eventCover

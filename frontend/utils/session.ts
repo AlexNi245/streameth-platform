@@ -8,7 +8,6 @@ if (!process.env.SESSION_SECRET) {
 if (!process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID) {
   throw new Error('NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID cannot be empty.')
 }
-
 const COOKIE_NAME = process.env.COOKIE_NAME ?? 'streameth.siwe'
 
 const SESSION_OPTIONS = {

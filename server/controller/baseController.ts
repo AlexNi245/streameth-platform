@@ -43,7 +43,6 @@ export default class BaseController<T> implements IBaseController<T> {
 
   async getAll(query: string): Promise<T[]> {
     const files = await this.store.readAll(query)
-
     const dataPromises = files.map(async (file) => {
       const data = await this.store.read(`${query}/${file}`)
       try {

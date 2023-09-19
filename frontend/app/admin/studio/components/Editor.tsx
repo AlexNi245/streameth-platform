@@ -1,6 +1,7 @@
 'use client'
 
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import { apiUrl } from '@/server/utils'
 import { StreamSession, useStreamSessions } from '@livepeer/react'
 import dayjs from 'dayjs'

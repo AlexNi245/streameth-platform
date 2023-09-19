@@ -4,7 +4,7 @@ import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 import { useEffect, useState } from 'react'
 import { EventInfo } from '../page'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
 
 dayjs.extend(duration)
 

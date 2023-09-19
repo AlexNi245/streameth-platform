@@ -1,5 +1,6 @@
 'use client'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import SpeakerIconList from '@/app/[organization]/[event]/(eventHome)/speakers/components/SpeakerIconList'
 import { useEffect, useState, useContext } from 'react'
 import { ModalContext } from '@/components/context/ModalContext'

@@ -3,7 +3,7 @@ import { join } from 'path'
 
 export function GetData(folderPath: string, fileExtension = '.json') {
   const files: any[] = []
-  const items = fs.readdirSync(folderPath, { withFileTypes: true })
+  const items = fs.readdirSync(join(__dirname, folderPath), { withFileTypes: true })
 
   for (const i of items) {
     if (i.isDirectory()) {

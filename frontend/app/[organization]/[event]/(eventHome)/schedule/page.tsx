@@ -5,7 +5,6 @@ import {
 import SessionsOnSchedule from './components/SessionsOnGrid'
 import ScheduleGrid from './components/ScheduleGrid'
 import { notFound } from 'next/navigation'
-import { hasData } from '@/server/utils'
 import { ScheduleContextProvider } from './components/ScheduleContext'
 import StageSelect from './components/StageSelect'
 import DateSelect from './components/DateSelect'
@@ -21,7 +20,7 @@ interface Params {
 
 const EventPage = async ({ params }: Params) => {
   const eventController = new EventController()
-
+  const hasData = false
   try {
     const event = await eventController.getEvent(
       params.event,
@@ -31,7 +30,7 @@ const EventPage = async ({ params }: Params) => {
       await new StageController().getAllStagesForEvent(params.event)
     ).map((stage) => stage.toJson())
     const dates = getEventDays(event.start, event.end)
-    if (!hasData({ event })) return notFound()
+    // if (!hasData({ event })) return notFound()
 
     return (
       <ScheduleContextProvider

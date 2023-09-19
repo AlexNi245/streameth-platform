@@ -19,3 +19,8 @@ __exportStar(require("./controller/organization"), exports);
 __exportStar(require("./controller/session"), exports);
 __exportStar(require("./controller/speaker"), exports);
 __exportStar(require("./controller/stage"), exports);
+__exportStar(require("./model/event"), exports);
+__exportStar(require("./model/organization"), exports);
+__exportStar(require("./model/session"), exports);
+__exportStar(require("./model/speaker"), exports);
+__exportStar(require("./model/stage"), exports);

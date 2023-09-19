@@ -2,7 +2,8 @@
 import { useState } from 'react'
 import SearchFilter from './SearchFilter'
 import SelectFilter from './SelectFilter'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import { ISpeaker } from '@/server/model/speaker'
 import { IStage } from '@/server/model/stage'
 

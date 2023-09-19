@@ -37,10 +37,12 @@ export default class FsController {
     }
   }
 
-  public async readAll(path: string): Promise<string[]> {
+  public async readAll(dirPath: string): Promise<string[]> {
     try {
-      return await this.readdirAsync(path);
+      console.log(__dirname, dirPath)
+      return await this.readdirAsync(path.join(__dirname, dirPath));
     } catch (e) {
+      console.error(`Error reading directory ${dirPath}`, e);
       return [];
     }
   }

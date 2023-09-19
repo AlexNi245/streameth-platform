@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
-import { ISession } from '@/server/model/session'
+import { ISession } from 'streameth-cli'
+
 import Scroll, { Element } from 'react-scroll'
 import Link from 'next/link'
 import ScheduleCard from '../../app/[organization]/[event]/(eventHome)/schedule/components/ScheduleCard'

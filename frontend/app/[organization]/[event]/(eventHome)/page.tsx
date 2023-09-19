@@ -3,7 +3,7 @@ import {
   StageController,
 } from 'streameth-cli'
 import { notFound } from 'next/navigation'
-import { hasData } from '@/server/utils'
+import { hasData } from '@/utils/components'
 import { getEventDays } from '@/utils/time'
 import HomePageLogoAndBanner from './components/HompageLogoAndBanner'
 import Link from 'next/link'

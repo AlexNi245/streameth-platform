@@ -57,12 +57,14 @@ class FsController {
             }
         });
     }
-    readAll(path) {
+    readAll(dirPath) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield this.readdirAsync(path);
+                console.log(__dirname, dirPath);
+                return yield this.readdirAsync(path.join(__dirname, dirPath));
             }
             catch (e) {
+                console.error(`Error reading directory ${dirPath}`, e);
                 return [];
             }
         });
