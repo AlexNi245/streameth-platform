@@ -1,1 +1,8 @@
-{"id":"demo_day","name":"Demo Day","eventId":"graph_paper_capital_demo_day","streamSettings":{"streamId":"cade8c6c-804b-4d4b-8ff4-d00c69e4b595"}}
+{
+  "id": "demo_day",
+  "name": "GPC S23 Demo Day",
+  "eventId": "graph_paper_capital_demo_day",
+  "streamSettings": {
+    "streamId": "cade8c6c-804b-4d4b-8ff4-d00c69e4b595"
+  }
+}
